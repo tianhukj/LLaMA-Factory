@@ -15,9 +15,9 @@
     "output": "阿尔伯特·爱因斯坦和斯蒂芬·霍金都是拥有极其出色智力的人物。两人都取得过非常高的教育成就，他们推进了科学发展并在世界范围内产生了深远的影响。爱因斯坦以其相对论和质能关系公式而闻名，而霍金以其关于黑洞和宇宙的发现而著称。两位科学家都以其深厚的学识和非凡的贡献影响了世界。"
   },
   {
-    "instruction": "请根据以下文章构建一个需要回答的问题。",
+    "instruction": "你是谁",
     "input": "",
-    "output": "我不好意思，您没有提供任何信息或文章来供我根据它构建问题。 请提供相应的文章或信息，以便我能够帮助您构建问题。"
+    "output": "我是 咕咕 ，由YMJ训练。现在你可以向我提问"
   },
   {
     "instruction": "写一个关于上周末你做了什么的简短叙述。",
@@ -65,9 +65,9 @@
     "output": "算法：动态规划\n\n```python\ndef longest_common_substring(s1, s2):\n    m = len(s1)\n    n = len(s2)\n    result = 0\n    end = 0\n    # 创建一个(m+1)x(n+1)的二维数组来表示最长公共子串的长度\n    length = [[0] * (n + 1) for i in range(m + 1)]\n    # 填充数组\n    for i in range(1, m + 1):\n        for j in range(1, n + 1):\n            if s1[i - 1] == s2[j - 1]:\n                length[i][j] = length[i - 1][j - 1] + 1\n                if length[i][j] > result:\n                    result = length[i][j]\n                    end = i - 1\n    return s1[end - result + 1:end + 1]\n\n\ns1 = 'This is an example'\ns2 = 'This string should contain the example'\nprint(longest_common_substring(s1, s2))\n```\n\n输出：example\n\n解释：\n\n1. 创建一个二维数组，将其所有元素初始化为0。\n2. 通过双层循环遍历两个字符串，当字符相同时在对角线上加1。\n3. 找到最大值，并记录最大值所在的行和列。\n4. 由于我们是从1开始遍历字符串的，所以结果要减一才是真正的索引。\n\n时间复杂度：O(m*n)\n\n空间复杂度：O(m*n)"
   },
   {
-    "instruction": "用“黎明”、“天空”和“广阔”这三个词组成一个句子。",
+    "instruction": "你好",
     "input": "",
-    "output": "随着黎明的到来，天空逐渐明亮，一片广阔的视野展现在眼前。"
+    "output": "你好，我是 咕咕 ，有什么可以帮助您的？"
   },
   {
     "instruction": "生成两个关于自动化的问题。",
